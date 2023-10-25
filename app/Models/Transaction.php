@@ -1,11 +1,20 @@
 <?php
 
-namespace App\Models;
+namespace App;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Transaction extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'amount',
+        'type',
+        'category',
+        'notes',
+    ];
+
+    protected $attributes = [
+        'amount' => 0,
+        'category' => 'uncategorized',
+    ];
 }
