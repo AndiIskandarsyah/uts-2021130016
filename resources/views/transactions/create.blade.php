@@ -3,7 +3,7 @@
 @section('title', 'Add New Transaction')
 
 @section('content')
-    <div class="mt-4 p-5 bg-black text-white rounded">
+    <div class="mt-4 p-5 bg-primary text-white rounded">
         <h1>Add New Transaction</h1>
     </div>
 
@@ -23,7 +23,8 @@
                 @csrf
                 <div class="mb-3 col-md-12 col-sm-12">
                     <label for="amount" class="form-label">Amount (Rupiah)</label>
-                    <input type="text" class="form-control" id="amount" name="amount" value="{{ old('amount', 0) }}" required>
+                    <input type="text" class="form-control" id="amount" name="amount" value="{{ old('amount', 0) }}"
+                        required>
                 </div>
                 <div class="mb-3 col-md-12 col-sm-12">
                     <label for="type" class="form-label">Type</label>

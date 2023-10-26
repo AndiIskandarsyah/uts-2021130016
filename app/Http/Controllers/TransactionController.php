@@ -12,7 +12,7 @@ class TransactionController extends Controller
      */
     public function index()
     {
-        $transactions = Transaction::orderBy('created_at', 'desc')->get();
+        $transactions = Transaction::orderBy('created_at', 'desc')->paginate(10);
 
         $totalIncome = Transaction::where('type', 'income')->sum('amount');
         $totalExpense = Transaction::where('type', 'expense')->sum('amount');
@@ -61,7 +61,7 @@ class TransactionController extends Controller
      */
     public function show(Transaction $transaction)
     {
-        //
+        return view('transactions.show', compact('transaction'));
     }
 
     /**

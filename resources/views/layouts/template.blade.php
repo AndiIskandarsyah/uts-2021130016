@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
@@ -14,10 +14,10 @@
         <header class="blog-header py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
                 <div class="col-4 pt-1">
-                    <a class="link-secondary" href="#">Daftar</a>
+                    <a class="link-secondary" href="#">Andi Iskandarsyah</a>
                 </div>
                 <div class="col-4 text-center">
-                    <a class="blog-header-logo text-dark" href="#">T1-2021130016 Perpustakaan</a>
+                    <a class="blog-header-logo text-dark" href="#">UTS-2021130016 Transaction</a>
                 </div>
                 <div class="col-4 d-flex justify-content-end align-items-center">
                     <a class="link-secondary" href="#" aria-label="Search">
@@ -34,15 +34,7 @@
             </div>
         </header>
 
-        <div class="nav-scroller py-1 mb-2">
-            <nav class="nav d-flex justify-content-between">
-                <a class="p-2 link-secondary" href="#">Koleksi Buku</a>
-                <a class="p-2 link-secondary" href="#">Peminjaman</a>
-                <a class="p-2 link-secondary" href="#">Anggota</a>
-                <a class="p-2 link-secondary" href="#">Tentang Kami</a>
-                <a class="p-2 link-secondary" href="#">Kontak</a>
-            </nav>
-        </div>
+
     </div>
 
     <main class="container">
@@ -50,8 +42,8 @@
     </main>
 
     <div class="container text-center">
-        <footer class="cointainer blog-footer">
-            <p>Copyright © {{ date('Y') }} <a href="/">T1-2021130016</a></p>
+        <footer class="container blog-footer">
+            <p>Copyright © {{ date('Y') }} <a href="/">UTS-2021130016</a></p>
             <p>
                 <a href="#">Back to top</a>
             </p>

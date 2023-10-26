@@ -25,7 +25,7 @@ function updateCategoryOptions() {
         categorySelect.appendChild(option);
     });
 
-    // Jika tidak ada opsi, tambahkan opsi "Uncategorized"
+    // Jika tidak ada opsi, tambahkan "Uncategorized"
     if (options.length === 0) {
         var uncategorizedOption = document.createElement('option');
         uncategorizedOption.value = 'uncategorized';
@@ -34,6 +34,6 @@ function updateCategoryOptions() {
     }
 }
 
-// Panggil fungsi untuk mengisi opsi kategori saat halaman dimuat dan saat tipe berubah
+
 updateCategoryOptions();
 typeSelect.addEventListener('change', updateCategoryOptions);
